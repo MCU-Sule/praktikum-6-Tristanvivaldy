@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<meta name="author" content="TristanVivaldy 2172032">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,400;1,300&display=swap" 
+    rel="stylesheet"> 
+    <title>Index</title>
+</head>
+<style>
+    body{
+        background-image: url(background.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h1 {
+        text-align: center;
+        font-family: 'Mulish', sans-serif;
+        color: #3c36a3;
+    }
+    #keseluruhan {
+        display: flex;
+    }
+    #tabel1 {
+        width: 200px;
+        height: 520px;
+        margin-left: auto;
+        background-color: rgba(200, 214, 229,0.8);
+        padding-left:50px ;
+        padding-right:50px ;
+    }
+    #tabel2 {
+        width: 200px;
+        height: 520px;
+        margin-right: auto;
+        background-color: rgba(220, 221, 225,0.8);
+        padding-left:50px ;
+        padding-right:50px ; 
+    }
+    .Judul1 {
+        font-family: 'Mulish', sans-serif;
+        font-size: 30px;
+        margin-top: 80px;
+    }
+    .Judul2 {
+        font-family: 'Mulish', sans-serif;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    label {
+        font-family: 'Mulish', sans-serif;
+        font-size: 20px;
+    }
+    input {
+        background: transparent;
+        border-top: hidden;
+        border-left: hidden;
+        border-right: hidden;
+        outline-width: 0px;
+        margin-top: 5px;
+        width: 190px;
+    }
+    #opacity {
+        opacity: 0.6;
+    }
+    #sign {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        border:1px solid #5dcc94;
+        color:white;
+        background-color: #2ed573;
+        border-radius: 100px;
+        width: 120px;
+        height: 25px;
+        vertical-align: auto;
+        text-align: center;
+        padding-top: 5px;
+    }
+    #sign:hover {
+        color: #54ad7b;
+        background-color:transparent;
+        outline: 1px solid #2ed573; 
+        transition-duration: 0.3s; 
+    }
+    #fg {
+        margin-right: auto;
+        margin-left: 55px;
+        color:blue;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .ukuran {
+        font-size: 12px;
+    }
+    .pilihan {
+        width:10px;
+        height: 12px;
+        width: 12px;
+    }
+    .pilihan2 {
+        width:10px;
+    }
+    #regis {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border:1px solid #3a9693;
+        color:white;
+        background-color: #38ada9;
+        border-radius: 100px;
+        width: 120px;
+        height: 25px;
+        vertical-align: auto;
+        text-align: center;
+        padding-top: 5px;
+    }
+    #regis:hover {
+        color: #3a9693;
+        background-color:transparent;
+        outline: 1px solid #38ada9;
+        transition-duration: 0.3s;
+    }
+    .font {font-family: sans-serif;}
+</style>
+<body class="font">
+    <h1>Fill in this form</h1> <br>
+    <div id="keseluruhan">
+        <div id="tabel1">
+            <form action="">
+            <p class="Judul1" align="center"> <i>Sign in</i> </p>
+            <div id="opacity">
+            <label for="mail">Email <br></label>
+            <input type="email" name="mail" id="" placeholder="nrp@maranatha.ac.id"> <br><br><br>
+            <label for="pw">Password <br></label>
+            <input type="password" name="pw" id=""> <br>
+            </div>
+            <div id="sign" >Sign in</div>
+            <div id="fg">forgot password?</div>
+            </form>
+        </div>
+
+        <div id="tabel2">
+            <form action="">
+                <p class="Judul2" align="center"> <i>Register</i> </p>
+                <div id="opacity" class="marginan">
+                <label for="nama" class="ukuran">Name <br></label>
+                <input type="text" name="nama" id=""class="ukuran"> <br> <br>
+                <label for="mail2" class="ukuran">Email <br></label> 
+                <input type="email" name="mail2" id=""class="ukuran"><br> <br>
+                <label for="lahir" class="ukuran">Date of birth <br></label>
+                <input type="date" name="lahir" id="" placeholder="dd/mm/yyyy" class="ukuran"><br> <br>
+                <label for="alamat" class="ukuran">Address <br></label>
+                <input type="text" name="alamat" id=""class="ukuran"><br> <br>
+                <label for="gender" class="ukuran">Gender <br></label>
+                <input type="radio" name="gender" id="" class="pilihan"class="ukuran"> <span class="ukuran">Male</span> 
+                <input type="radio" name="gender" id="Female"class="pilihan"class="ukuran"><span class="ukuran">Female</span><br><br>
+                <label for="hobi"class="ukuran">Hobby <br></label>
+                <input type="checkbox" name="hobi" id="" class="pilihan2"class="ukuran"><span class="ukuran">Singing</span> <br>
+                <input type="checkbox" name="hobi" id="" class="pilihan2"class="ukuran"><span class="ukuran">Playing</span> <br>
+                <input type="checkbox" name="hobi" id="" class="pilihan2"class="ukuran"><span class="ukuran">Ngoding</span> <br>
+                </div>
+                <div id="regis">Register</div>
+            </form>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
